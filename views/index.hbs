@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link rel="stylesheet" href="/style.css">
+    <title>Boss-Mode</title>
+</head>
+<body>
+    
+    <nav>
+        <h4 class="boss-mode">Boss Mode</h4>
+        <ul>
+     
+
+            
+            {{#if user }}
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/my_inventory">My Inventory</a></li>
+            <li><a href="/auth/logout">Logout</a></li>
+            
+            {{else}}
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            {{/if}}
+        </ul>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="jumbotron">
+  <h1 class="display-4">Inventory Project</h1>
+  
+  <hr class="my-4">
+  <a class="btn btn-primary btn-lg" href="/register" role="button">Register</a>
+</div>
+    </div>
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
